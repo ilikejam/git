@@ -275,6 +275,9 @@ __git_ps1_colorize_gitstring ()
 	if [ -n "$u" ]; then
 		u="$bad_color$u"
 	fi
+        if [ -n "$p" ]; then
+                p="$c_clear$p"
+        fi
 	r="$c_clear$r"
 }
 
